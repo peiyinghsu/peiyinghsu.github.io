@@ -129,8 +129,13 @@ a:active,a:focus,a:hover{color:#18bc9c}
 
 hr.star-light:after{color:#fff;background-color:#5447b7}
 
-.relative1{
-	position:relative;
-    right:-375px;
+
 	
 }
+
+.relative1{
+	position:relative;
+    right:-3 px ;
+
+}
+
