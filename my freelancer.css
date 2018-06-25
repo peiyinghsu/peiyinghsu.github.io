@@ -1,0 +1,137 @@
+ @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+	font-family: "Noto Sans", "Noto Sans TC";
+}
+
+.bg-primary{background-color:#5447b7!important}
+
+h1 {
+	font-family: inherit;
+	text-transform: none;
+	line-height: 6rem;
+}
+
+.subheading {
+	font-family: inherit;
+	text-transform: none;
+	margin-top: 1rem;
+}
+
+h2 {
+	font-family: inherit;
+}
+
+h3 {
+   	font-family: inherit;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+}
+
+.timeline::after {
+content: '';
+position: absolute;
+width: 6px;
+background-color: #18bc9c;
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
+}
+	
+.timeline-block {
+  padding: 10px 40px;
+  position:relative;
+  background-color: inherit;
+  width: 50%;
+}  
+
+.timeline-block::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid#18bc9c;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}	
+
+/* Place the container to the left */
+.timeline-left {
+	left: 0;
+}
+
+/* Place the container to the right */
+.timeline-right {
+    left: 50%;
+}	
+
+a, .list-social-icons,.list-inline-item a:hover, .text-primary{color:#18bc9c}
+.text-primary{color:#18bc9c!important}
+a:active,a:focus,a:hover{color:#18bc9c}
+
+.timeline-right::after{
+	left: -12px;
+}
+
+/* Media queries - Responsive timeline on screens less than 992px wide */
+@media screen and (max-width: 992px) {
+/* Place the timeline to the left */
+  .timeline::after {
+	left: 31px;
+ }
+ 
+ /* Full-width containers */
+  .timeline-block{
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 25px;
+  }
+
+
+/* Make all right containers behave like the left ones */
+.timeline-right{
+	left: 0%;
+ }
+}
+
+/* Media queries - Responsive timeline on screens less than 992px wide */
+@media screen and (max-width: 992px) {
+/* Place the timeline to the left */
+  .timeline::after {
+	left: 31px;
+ }
+ 
+ /* Full-width containers */
+  .timeline-block{
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 25px;
+  }
+
+
+/* Make all right containers behave like the left ones */
+.timeline-right{
+	left: 0%;
+ }
+ 
+ /* Make sure all circles are at the same spot */
+  .timeline-left::after, .timeline-right::after{
+	  left: 17px;
+  }
+}
+
+hr.star-light:after{color:#fff;background-color:#5447b7}
+
+.relative1{
+	position:relative;
+    right:-7.5px;
+	
+}
+
